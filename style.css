@@ -1,7 +1,73 @@
-body {
+html {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Playfair Display", serif;
+  background: linear-gradient(
+    99.6deg,
+    rgb(112, 128, 152) 10.6%,
+    rgb(242, 227, 234) 32.9%,
+    rgb(234, 202, 213) 52.7%,
+    rgb(220, 227, 239) 72.8%,
+    rgb(185, 205, 227) 81.1%,
+    rgb(154, 180, 212) 102.4%
+  );
 }
+/* The navigation bar */
+.navbar {
+  font-family: "Great Vibes", cursive;
+  overflow: hidden;
+  background: linear-gradient(
+    99.6deg,
+    rgb(112, 128, 152) 10.6%,
+    rgb(242, 227, 234) 32.9%,
+    rgb(234, 202, 213) 52.7%,
+    rgb(220, 227, 239) 72.8%,
+    rgb(185, 205, 227) 81.1%,
+    rgb(154, 180, 212) 102.4%
+  );
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffe6e6;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #dee1ec;
+  color: #011e6f;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+.greetings {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #041729;
+  line-height: 40px;
+}
+.greetings:hover {
+  color: #82318a;
+  transition: 0.6s ease-in-out;
+}
+.header-buttons {
+  margin-left: 145px;
+}
+
+/* Slides */
+
 .showSlide {
   display: none;
 }
@@ -12,7 +78,7 @@ body {
 .slidercontainer {
   max-width: 80%;
   position: relative;
-  margin: 5rem auto;
+  margin: 1rem auto;
   overflow: hidden;
 }
 .left,
@@ -23,7 +89,7 @@ body {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #6c1d68;
+  color: #011e6f;
   font-weight: bold;
   font-size: 38px;
   transition: 0.6s ease;
@@ -39,11 +105,11 @@ body {
 }
 .content {
   color: #d18997;
-  font-size: 30px;
+  font-size: 20px;
   position: absolute;
   top: 15px;
-  width: 100%;
-  text-align: center;
+  width: 99%;
+  text-align: end;
 }
 .active {
   background-color: #717171;
@@ -60,4 +126,123 @@ body {
   to {
     opacity: 1;
   }
+}
+/* Buttons */
+.button {
+  display: inline-block;
+  border-radius: 7px;
+  background: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+  border: none;
+  color: #011e6f;
+  text-align: center;
+  font-size: 18px;
+  padding: 18px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.author-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  justify-content: flex-start;
+}
+.she-codes-section,
+.ibm-section,
+.ibm-plus-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  justify-content: space-evenly;
+}
+.about-certification {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.photo-author {
+  border-radius: 100px;
+}
+.certificate-image {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgb(127, 132, 135);
+}
+.photo-section {
+  padding: 20px;
+}
+.biography {
+  padding: 50px;
+  line-height: 35px;
+}
+.first-line-icons,
+.second-line-icons {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.soft-skills {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.skill-item {
+  border: 1px solid #ececec;
+  padding: 18px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to top,
+    lightgrey 0%,
+    lightgrey 1%,
+    #e0e0e0 26%,
+    #efefef 48%,
+    #d9d9d9 75%,
+    #bcbcbc 100%
+  );
+  box-shadow: 2px 2px 2px 1px rgb(127, 132, 135);
 }

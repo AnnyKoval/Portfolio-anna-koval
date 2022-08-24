@@ -4,27 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Slider</title>
   </head>
   <body>
+    <div class="navbar">
+      <a href="./index.html" class="nav-link active">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./contacts.html">Contacts</a>
+    </div>
+
+    <div class="main">
+      <br />
+      <br />
+      <div class="greetings">
+        Hello! I'm Anna Koval, front-end developer from Kyiv, Ukraine. 
+        <br />
+        Recently graduated as a
+        React developer at SheCodes platform and learning Full Stack Software
+        Development in IBM. I build beautiful, responsive websites and share them with you.
+      </div>
+      <div class="header-buttons">
+         <span>
+      <a href="./projects.html" target="_blank"><button class="button" style="vertical-align: middle">
+          <span>Projects</span></a>
+    </span>
+        </button>
+        <span>
+      <a href="https://www.linkedin.com/in/anna-koval-525a893b/" target="_blank"><button class="button" style="vertical-align: middle">
+          <span>LinkedIn</span></a>
+    </span>
+        </button>
+      </div>
+    </div>
     <div class="slidercontainer">
       <div class="showSlide fade">
-        <img src="1.jpg" alt="First image" />
-        <div class="content">The notepads</div>
+        <img src="./images/1.png" alt="First project" />
+        <div class="content">Weather project</div>
       </div>
       <div class="showSlide fade">
-        <img src="2.jpg" alt="Second" />
-        <div class="content">The dictionary</div>
+        <img src="./images/2.png" alt="Second project" />
+        <div class="content">Dictionary on React</div>
       </div>
       <div class="showSlide fade">
-        <img src="3.jpg" alt="Third" />
-        <div class="content">Books</div>
+        <img src="./images/3.png" alt="Third project" />
+        <div class="content">Landing page</div>
+      </div>
+      <div class="showSlide fade">
+        <img src="./images/5.png" alt="Forth project" />
+        <div class="content">Weather app on React</div>
+      </div>
+      <div class="showSlide fade">
+        <img src="./images/4.png" alt="Forth project" />
+        <div class="content">Goose workshop</div>
       </div>
       <!--Navigation arrows-->
       <a class="left" onclick="nextSlide(-1)">←</a>
       <a class="right" onclick="nextSlide(1)">→</a>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
