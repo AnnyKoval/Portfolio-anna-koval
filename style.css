@@ -1,6 +1,12 @@
+:root {
+  --title-font: "Cormorant Garamond", serif;
+  --secondary-font: "Alegreya", serif;
+  --neutral-font: "Montserrat", sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: "Playfair Display", serif;
+  font-family: var(--neutral-font);
   /*background: linear-gradient(
     99.6deg,
     rgb(112, 128, 152) 10.6%,
@@ -10,27 +16,28 @@ body {
     rgb(185, 205, 227) 81.1%,
     rgb(154, 180, 212) 102.4%
   ); */
-  animation: changeBg 5s infinite alternate linear;
+  animation: changeBg 3s infinite alternate linear;
 }
 @keyframes changeBg {
   0% {
-    background: #708098;
+    background: #011012;
   }
   25% {
-    background: #b9b7c6;
+    background: #1d1057;
   }
   50% {
-    background: #f1dfe7;
+    background: #1a244d;
   }
   75% {
-    background: #eacad5;
+    background: #324982;
   }
   100% {
-    background: #dfdeea;
+    background: #395492;
   }
 }
 /* The navigation bar */
-.navbar {
+.navbar,
+.navbar-about {
   overflow: hidden;
   background: linear-gradient(
     to top,
@@ -47,14 +54,15 @@ body {
 }
 
 /* Links inside the navbar */
-.navbar a {
+.navbar a,
+.navbar-about a {
   float: left;
   display: block;
   color: #011e6f;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 /* Change background on mouse-over */
@@ -67,13 +75,26 @@ body {
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
+.author-name {
+  font-size: 126px;
+  color: #fae7e7;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--title-font);
+}
+@media screen and (max-width: 900px) {
+  .author-name {
+    font-size: 4rem;
+  }
+}
 
 /* animation */
 .typing {
-  height: 20vh;
+  height: 18vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 60px;
 }
 .typing-effect {
   width: 31ch;
@@ -81,8 +102,12 @@ body {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
+  text-align: center;
   font-size: 4rem;
+  font-weight: bold;
+  font-family: var(--secondary-font);
   color: #011e6f;
+  margin-bottom: 60px;
 }
 @keyframes typing {
   from {
@@ -96,11 +121,29 @@ body {
 }
 @media screen and (max-width: 900px) {
   .typing-effect {
-    font-size: 1.3rem;
+    font-size: 2rem;
     animation: typing 5s steps(22), effect 6s step-end infinite alternate;
   }
 }
-
+@media screen and (max-width: 900px) {
+  .typing {
+    margin: 0;
+  }
+}
+.subheader-main {
+  font-family: var(--secondary-font);
+  font-size: 60px;
+  text-align: center;
+  margin-top: 150px;
+  color: #fae7e7;
+  font-weight: lighter;
+}
+@media screen and (max-width: 900px) {
+  .subheader-main {
+    font-size: 4rem;
+    margin: 0;
+  }
+}
 .greetings {
   width: 80%;
   display: block;
@@ -115,6 +158,7 @@ body {
 }
 .header-buttons {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 /* Slides */
@@ -214,7 +258,6 @@ body {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  font-family: "Playfair Display", serif;
 }
 
 .button span {
@@ -248,73 +291,82 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
-  .author-section {
-    display: flex;
-    padding: 10px;
-    justify-content: flex-start;
+}
+.main-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/images/pineapple.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+.profile-pic {
+  max-width: 300px;
+  border-radius: 500px;
+}
+.homepage-about {
+  color: white;
+  font-family: var(--title-font);
+  line-height: 30px;
+  font-size: 24px;
+}
+.author-greetings {
+  font-size: 48px;
+  text-align: center;
+}
+.author-story {
+  line-height: 40px;
+  font-family: var(--title-font);
+}
+footer,
+.footer-text-center {
+  height: 100px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+footer i {
+  color: #bcbcbc;
+  font-size: 16px;
+  background: white;
+  padding: 10px;
+  border-radius: 100%;
+  margin: 10px 15px;
+}
+
+footer i:hover {
+  color: #1a244d;
+}
+
+footer p {
+  font-size: 10px;
+  margin: 10px auto;
+  color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .footer-text-center {
+    margin-top: 0;
   }
-  .she-codes-section,
-  .ibm-section,
-  .ibm-plus-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 50px;
-    justify-content: space-evenly;
-  }
-  .about-certification {
-    font-size: 40px;
-    text-align: center;
-    font-weight: bold;
-  }
-  .photo-author {
-    border-radius: 100px;
-  }
-  .certificate-image {
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 1px rgb(127, 132, 135);
-  }
-  .photo-section {
-    padding: 20px;
-  }
-  .biography {
-    padding: 50px;
-    line-height: 35px;
-  }
-  .first-line-icons,
-  .second-line-icons {
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .soft-skills {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .skill-item {
-    border: 1px solid #ececec;
-    padding: 18px;
-    border-radius: 10px;
-    background: linear-gradient(
-      to top,
-      lightgrey 0%,
-      lightgrey 1%,
-      #e0e0e0 26%,
-      #efefef 48%,
-      #d9d9d9 75%,
-      #bcbcbc 100%
-    );
-    box-shadow: 2px 2px 2px 1px rgb(127, 132, 135);
-  }
+}
+.skills-box {
+  height: 70px;
+}
+
+.icon-wrappers {
+  width: 75px;
+}
+
+.skills-icons {
+  height: 50px;
+  filter: drop-shadow(5px 5px 10px rgb(0, 0, 0, 0.4));
+}
+
+.skills-icons:hover {
+  height: 80px;
 }
