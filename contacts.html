@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Cormorant+Garamond:wght@400;700&family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script
       src="https://kit.fontawesome.com/1323130e7f.js"
       crossorigin="anonymous"
@@ -36,6 +37,26 @@
       <a href="./projects.html">Projects</a>
       <a href="./contacts.html" class="nav-link active">Contacts</a>
     </div>
+
+    <br />
+    <br />
+    <br />
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p></p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+    <input type="hidden" name="form-name" value="contact" />
 
     <footer class="text-center">
       <a href="https://github.com/AnnyKoval" target="_blank" title="GitHub"
