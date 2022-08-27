@@ -448,7 +448,7 @@ footer p {
   }
 }
 .certification-wrappers {
-  width: 250px;
+  width: 350px;
 }
 @media screen and (max-width: 900px) {
   .certification-wrappers {
@@ -456,7 +456,8 @@ footer p {
   }
 }
 .certification-icons {
-  height: 100px;
+  height: 150px;
+  border-radius: 10px;
   filter: drop-shadow(5px 5px 10px rgb(0, 0, 0, 0.4));
 }
 @media screen and (max-width: 900px) {
@@ -465,11 +466,10 @@ footer p {
   }
 }
 .certification-icons:hover {
-  height: 150px;
+  height: 180px;
 }
 @media screen and (max-width: 900px) {
   .certification-icons:hover {
-    border-radius: 5px;
     height: 50px;
   }
 }
