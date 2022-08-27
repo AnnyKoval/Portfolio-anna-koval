@@ -364,6 +364,7 @@ body {
 .author-greetings {
   font-size: 48px;
   text-align: center;
+  font-family: var(--neutral-font);
 }
 .author-story {
   line-height: 40px;
@@ -476,4 +477,94 @@ footer p {
 
 .card-wrapper:hover {
   transform: scale(1.1);
+}
+/*projects header*/
+
+.projects-header {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  color: var(--color-main);
+  font-size: 48px;
+  padding: 5px 8px;
+}
+.projects-header:hover {
+  color: #d18997;
+  font-size: 44px;
+  transition: 0.6s ease-in-out;
+}
+.projects-header::before,
+.projects-header::after,
+.projects-header-span::before,
+.projects-header-span::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  transition: 0.5s;
+}
+.projects-header::before {
+  top: -2px;
+  left: -2px;
+  border-top: 2px solid #fc7273;
+  border-left: 2px solid #fc7273;
+}
+.projects-header::after {
+  top: -2px;
+  right: -2px;
+  border-top: 2px solid #fc7273;
+  border-right: 2px solid #fc7273;
+}
+.projects-header-span::before {
+  bottom: -2px;
+  left: -2px;
+  border-bottom: 2px solid #fc7273;
+  border-left: 2px solid #fc7273;
+}
+.projects-header-span::after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 2px solid #fc7273;
+  border-right: 2px solid #fc7273;
+}
+.projects-header:hover::before,
+.projects-header:hover::after,
+.projects-header:hover .projects-header-span::before,
+.projects-header:hover .projects-header-span::after {
+  width: calc(180px / 2);
+  height: calc(50px / 2);
+}
+.project-pic {
+  max-width: 600px;
+  border-radius: 10px;
+}
+.projects-about {
+  color: var(--color-main);
+  font-family: var(--neutral-font);
+  line-height: 30px;
+  font-size: 14px;
+  margin-top: 140px;
+}
+
+.typing-project-weather {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.typing-effect-project-weather {
+  width: 15ch;
+  animation: typing 2s steps(22), effect 1s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  font-family: var(--neutral-font);
+  color: #fc7273;
+  margin-bottom: 60px;
 }
