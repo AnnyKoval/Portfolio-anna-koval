@@ -540,6 +540,11 @@ footer p {
   max-width: 600px;
   border-radius: 10px;
 }
+@media screen and (max-width: 900px) {
+  .project-pic {
+    max-width: 350px;
+  }
+}
 .projects-about {
   color: var(--color-main);
   font-family: var(--neutral-font);
