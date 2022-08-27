@@ -469,6 +469,7 @@ footer p {
 @media screen and (max-width: 900px) {
   .certification-icons:hover {
     border-radius: 5px;
+    height: 150px;
   }
 }
 
