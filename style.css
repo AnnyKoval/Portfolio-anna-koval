@@ -106,8 +106,8 @@ body {
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
-  font-family: var(--secondary-font);
-  color: #011e6f;
+  font-family: var(--title-font);
+  color: #ff9077;
   margin-bottom: 60px;
 }
 @keyframes typing {
@@ -132,6 +132,8 @@ body {
     margin: 0;
     margin-bottom: 0;
     margin-top: 0;
+    height: 60px;
+    font-weight: normal;
   }
 }
 .subheader-main {
@@ -193,6 +195,40 @@ body {
   font-size: 38px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+}
+.arrows {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .arrows {
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .left-previous,
+  .right-previous {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .left-previous,
+  .right-previous {
+    font-size: 35px;
+    margin-top: -10px;
+    margin-bottom: 0;
+    cursor: pointer;
+    color: #011e6f;
+    top: 110%;
+    width: auto;
+    padding: 16px;
+
+    font-weight: bold;
+
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
 }
 .right {
   right: 0;
@@ -331,6 +367,10 @@ body {
 .author-story {
   line-height: 40px;
   font-family: var(--title-font);
+}
+.coded-author {
+  text-decoration: none;
+  color: #d9d9d9;
 }
 footer,
 .footer-text-center {
