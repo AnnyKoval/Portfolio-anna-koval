@@ -501,7 +501,7 @@ footer p {
   .projects-header {
     font-size: 28px;
     margin-top: 0;
-    top: 10%;
+    top: 20%;
   }
 }
 .projects-header:hover {
@@ -615,7 +615,7 @@ form .primary-button:hover {
     height: 260px;
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 120px;
+    margin-top: 220px;
   }
 }
 .input-name,
@@ -661,9 +661,10 @@ form .primary-button:hover {
 @media screen and (max-width: 900px) {
   .button-contacts {
     width: 100px;
-    height: 30px;
-
-    font-size: 10px;
+    height: 40px;
+    box-shadow: 6px 6px 12px var(--color-secondary), -6px -6px 12px #fff;
+    transition: all 0.5s;
+    font-size: 18px;
     margin-left: 10px;
     margin-top: 60px;
   }
