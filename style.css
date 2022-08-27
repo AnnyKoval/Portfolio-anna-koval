@@ -144,7 +144,7 @@ body {
 }
 @media screen and (max-width: 900px) {
   .subheader-main {
-    font-size: 4rem;
+    font-size: 2rem;
     margin: 0;
   }
 }
