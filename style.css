@@ -497,13 +497,7 @@ footer p {
   font-size: 48px;
   padding: 5px 8px;
 }
-@media screen and (max-width: 900px) {
-  .projects-header {
-    font-size: 28px;
-    margin-top: 0;
-    top: 20%;
-  }
-}
+
 .projects-header:hover {
   color: #d18997;
   font-size: 44px;
@@ -615,7 +609,7 @@ form .primary-button:hover {
     height: 260px;
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 220px;
+    margin-top: 250px;
   }
 }
 .input-name,
