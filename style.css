@@ -656,6 +656,7 @@ form .primary-button:hover {
   .button-contacts {
     width: 100px;
     height: 40px;
+    background: #fff;
     box-shadow: 6px 6px 12px var(--color-secondary), -6px -6px 12px #fff;
     transition: all 0.5s;
     font-size: 18px;
