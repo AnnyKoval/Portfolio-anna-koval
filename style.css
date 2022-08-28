@@ -630,9 +630,7 @@ form .primary-button:hover {
   width: 205px;
   height: 27px;
 }
-.input-message:hover {
-  height: 100px;
-}
+
 @media screen and (max-width: 900px) {
   .input-message,
   .input-email,
@@ -660,7 +658,7 @@ form .primary-button:hover {
   transition: all 0.5s;
   box-shadow: 6px 6px 12px var(--color-secondary), -6px -6px 12px #fff;
 }
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 900px) {
   .button-contacts {
     width: 100px;
     height: 40px;
