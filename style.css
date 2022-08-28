@@ -9,16 +9,7 @@
 body {
   margin: 0;
   font-family: var(--neutral-font);
-  /*background: linear-gradient(
-    99.6deg,
-    rgb(112, 128, 152) 10.6%,
-    rgb(242, 227, 234) 32.9%,
-    rgb(234, 202, 213) 52.7%,
-    rgb(220, 227, 239) 72.8%,
-    rgb(185, 205, 227) 81.1%,
-    rgb(154, 180, 212) 102.4%
-  ); */
-  animation: changeBg 3s infinite alternate linear;
+  animation: changeBg 5s infinite alternate linear;
 }
 @keyframes changeBg {
   0% {
@@ -37,6 +28,7 @@ body {
     background: #395492;
   }
 }
+
 /* The navigation bar */
 .navbar,
 .navbar-about {
@@ -738,5 +730,68 @@ form .primary-button:hover {
 @keyframes dots {
   50% {
     transform: translateX(-31px);
+  }
+}
+/*container*/
+.container-phrase {
+  display: flex;
+  /*   border:1px solid red; */
+  height: 30%;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .container-phrase {
+    height: 10%;
+  }
+}
+svg {
+  display: block;
+  font: 10.5em "Alegreya";
+  width: 960px;
+  height: 150px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 900px) {
+  svg {
+    height: 100px;
+  }
+}
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #4d163d;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #840037;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #bd0034;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #bd0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: var(--color-secondary);
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
   }
 }
