@@ -611,7 +611,7 @@ form .primary-button:hover {
     height: 260px;
     font-size: 18px;
     margin-left: 20px;
-    margin-top: 250px;
+    margin-top: 220px;
   }
 }
 .input-name,
@@ -630,7 +630,14 @@ form .primary-button:hover {
   width: 205px;
   height: 27px;
 }
-
+.contact-span {
+  font-size: 38px;
+}
+@media screen and (max-width: 900px) {
+  .contact-span {
+    font-size: 27px;
+  }
+}
 @media screen and (max-width: 900px) {
   .input-message,
   .input-email,
