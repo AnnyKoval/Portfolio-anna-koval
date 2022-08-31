@@ -426,17 +426,22 @@ footer p {
   filter: drop-shadow(5px 5px 10px rgb(0, 0, 0, 0.4));
 }
 @media screen and (max-width: 900px) {
+  .skills-icons {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
   .skills-section {
     max-width: 100%;
   }
 }
 
 .skills-icons:hover {
-  height: 80px;
+  height: 70px;
 }
 @media screen and (max-width: 900px) {
   .skills-icons:hover {
-    height: 60px;
+    height: 43px;
   }
 }
 .certification-box {
