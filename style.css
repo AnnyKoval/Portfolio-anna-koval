@@ -693,9 +693,7 @@ form .primary-button:hover {
 }
 @media screen and (max-width: 900px) {
   .dots-loading {
-    left: 100%;
-    top: 30%;
-    width: 140px;
+    display: none;
   }
 }
 .dot {
