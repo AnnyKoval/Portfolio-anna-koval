@@ -462,9 +462,11 @@ footer p {
   }
 }
 .certification-icons {
-  height: 150px;
+  height: 170px;
   border-radius: 10px;
   filter: drop-shadow(5px 5px 10px rgb(0, 0, 0, 0.4));
+  display: block;
+  margin: 0 auto;
 }
 @media screen and (max-width: 900px) {
   .certification-icons {
@@ -472,7 +474,7 @@ footer p {
   }
 }
 .certification-icons:hover {
-  height: 180px;
+  height: 195px;
 }
 @media screen and (max-width: 900px) {
   .certification-icons:hover {
