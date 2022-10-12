@@ -65,11 +65,11 @@ body {
 }
 
 .author-name {
-  font-size: 126px;
+  font-size: 110px;
   font-weight: normal;
   color: #fae7e7;
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
   font-family: var(--neutral-font);
 }
 @media screen and (max-width: 900px) {
@@ -508,9 +508,10 @@ footer p {
 .card-wrapper:hover {
   transform: scale(1.1);
 }
+
 @media screen and (min-width: 1450px) {
   .second-section-main {
-    margin: 22rem auto;
+    margin: 32rem auto;
   }
 }
 @media screen and (max-width: 900px) {
@@ -529,6 +530,12 @@ footer p {
   color: var(--color-main);
   font-size: 40px;
   padding: 5px 8px;
+}
+
+@media screen and (min-width: 1490px) {
+  .projects-header {
+    top: 10%;
+  }
 }
 
 .projects-header:hover {
@@ -603,7 +610,7 @@ footer p {
   margin: 0;
 }
 .typing-effect-project-weather {
-  width: 15ch;
+  width: 18ch;
   animation: typing 2s steps(22), effect 1s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -784,9 +791,9 @@ form .primary-button:hover {
 }
 svg {
   display: block;
-  font: 8.5em var(--neutral-font);
+  font: 5.5em var(--neutral-font);
   width: 960px;
-  height: 160px;
+  height: 200px;
   margin: 0 auto;
 }
 @media screen and (max-width: 900px) {
