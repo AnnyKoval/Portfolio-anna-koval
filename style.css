@@ -41,7 +41,7 @@ body {
     #d9d9d9 75%,
     #bcbcbc 100%
   );
-  opacity: 0.7;
+  opacity: 0.8;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -51,8 +51,8 @@ body {
 .navbar a,
 .navbar-about a {
   float: left;
-  display: block;
   color: white;
+  display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -62,7 +62,6 @@ body {
 /* Change background on mouse-over */
 .navbar a:hover {
   background: #dee1ec;
-  color: #82318a;
 }
 
 .author-name {
@@ -636,7 +635,7 @@ form .primary-button:hover {
   border: 1px solid #072268;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 6px 6px 12px #072268, -6px -6px 12px;
+  box-shadow: 4px 4px 4px #072268, -6px -6px 6px;
 }
 @media screen and (max-width: 900px) {
   .form-request {
