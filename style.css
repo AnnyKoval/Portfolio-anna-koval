@@ -514,6 +514,11 @@ footer p {
     margin: 22rem auto;
   }
 }
+@media screen and (max-width: 900px) {
+  .second-section-main {
+    margin: 8rem auto;
+  }
+}
 /*projects header*/
 
 .projects-header {
