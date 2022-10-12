@@ -1,5 +1,4 @@
 :root {
-  --title-font: "Cormorant Garamond", serif;
   --neutral-font: "Montserrat", sans-serif;
   --color-main: #fae7e7;
   --color-secondary: #fc7273;
@@ -382,6 +381,7 @@ body {
 .coded-author {
   text-decoration: none;
   color: #d9d9d9;
+  font-family: var(--neutral-font);
 }
 footer,
 .footer-text-center,
