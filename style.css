@@ -2,6 +2,7 @@
   --neutral-font: "Montserrat", sans-serif;
   --color-main: #fae7e7;
   --color-secondary: #fc7273;
+  --title-font: "Cormorant Garamond", serif;
 }
 
 body {
@@ -359,7 +360,6 @@ body {
 }
 .homepage-about {
   color: var(--color-main);
-  font-family: var(--title-font);
   line-height: 30px;
   font-size: 24px;
 }
