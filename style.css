@@ -55,8 +55,9 @@ body {
 }
 
 /* Change background on mouse-over */
-a:hover {
+.navbar a:hover {
   background: #dee1ec;
+  color: black;
 }
 
 .author-name {
