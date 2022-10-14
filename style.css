@@ -533,6 +533,11 @@ footer p {
     top: 10%;
   }
 }
+@media screen and (max-width: 700px) {
+  .projects-header {
+    font-size: 1.5rem;
+  }
+}
 
 .projects-header:hover {
   color: white;
