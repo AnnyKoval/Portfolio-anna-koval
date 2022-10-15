@@ -370,7 +370,7 @@ body {
   font-family: var(--neutral-font);
 }
 .author-story {
-  line-height: 40px;
+  line-height: 28px;
   font-size: 16px;
   font-family: var(--neutral-font);
 }
@@ -512,7 +512,7 @@ footer p {
 }
 @media screen and (max-width: 900px) {
   .second-section-main {
-    margin: 5rem auto;
+    margin: 2rem auto;
   }
 }
 /*projects header*/
@@ -799,7 +799,7 @@ svg {
 }
 @media screen and (max-width: 900px) {
   svg {
-    height: 100px;
+    height: 70px;
   }
 }
 .text-copy {
