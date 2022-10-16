@@ -887,3 +887,8 @@ svg {
     right: 90px;
   }
 }
+@media screen and (min-width: 950px) and (max-width: 1400px) {
+  .closebtn {
+    right: 160px;
+  }
+}
