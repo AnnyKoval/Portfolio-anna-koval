@@ -373,6 +373,7 @@ body {
   line-height: 28px;
   font-size: 16px;
   font-family: var(--neutral-font);
+  text-align: justify;
 }
 .coded-author {
   text-decoration: none;
@@ -565,7 +566,9 @@ footer p {
   width: calc(180px / 2);
   height: calc(50px / 2);
 }
-
+.project-text {
+  text-align: justify;
+}
 .project-pic {
   max-width: 600px;
   border-radius: 10px;
