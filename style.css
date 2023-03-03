@@ -229,9 +229,9 @@ body {
 }
 .content {
   color: #d18997;
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
-  top: 15px;
+  top: 5px;
   width: 99%;
   text-align: end;
 }
